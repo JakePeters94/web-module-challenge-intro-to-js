@@ -159,7 +159,7 @@ function hungryDog(weight, age){
   }
 }
 
-console.log("task 3 ", hungryDog(15, 1));
+console.log("task 3: ", hungryDog(15, 1));
 
 
 
@@ -209,7 +209,7 @@ function game(user, computer){
   }
 }
 
-console.log(`task 4:`, game(`paper`, computer));
+console.log(`task 4: `, game(`paper`, computer));
 
 
 
@@ -224,9 +224,11 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
-}
+function miles(KM){
+  return KM * 0.621371;
+};
+
+console.log('task 5a:', miles(13));
 
 
 
@@ -238,9 +240,11 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(CM){
+  return CM / 30.48;
 }
+
+console.log('task 5b:', feet(71))
 
 
 
@@ -258,9 +262,13 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(number){
+      for(let i = number; i > 0; i--){
+        return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i -1} bottles of soda on the wall`
+      }
 }
+
+console.log('task 6:', annoyingSong(246));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -278,9 +286,21 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(number){
+if(number >= 90){
+  return `you got an A`
+}else if(number < 90 && number >= 80){
+  return `you got a B`
+}else if(number < 80 && number >= 70){
+  return `you got a C`
+}else if(number < 70 && number >= 60){
+  return `you got a D`
+}else{
+  return `you got an F`
 }
+}
+
+console.log(`task 7: `, grade(83));
 
 
 
